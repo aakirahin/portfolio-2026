@@ -12,5 +12,6 @@ export default defineConfig({
   ],
   optimizeDeps: {
     exclude: ['react-icons/*']
-  }
+  },
+  base: "/portfolio-2026/"
 })

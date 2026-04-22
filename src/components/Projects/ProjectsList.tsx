@@ -5,9 +5,6 @@ import carlyAiThumbnail from "../../assets/carly-ai-thumbnail.png"
 import { Link } from 'react-router'
 import SpotlightCard from '../SpotlightCard/SpotlightCard'
 
-// const boxClass = "rounded-xl p-6 backdrop-blur-xs"
-const buttonClass = "font-mono p-2 rounded-sm px-[12px] py-[8px] border duration-300 transition-all backdrop-blur-xs"
-
 // REPLACE WITH GITHUB API AND RETRIEVE LAST THREE PROJECTS
 const projects = [
     {
@@ -54,7 +51,7 @@ const ProjectsList = () => {
             </div>
             <Link 
                 to="https://github.com/aakirahin"
-                className={`${buttonClass} bg-white/10 border-white/25 hover:bg-white/20 w-fit`}
+                className="btn btn-secondary w-fit"
             >
                 Check out my GitHub
             </Link>

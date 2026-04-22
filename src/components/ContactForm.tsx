@@ -57,8 +57,6 @@ const inputs = [
     },
 ]
 
-const buttonClass = "font-mono p-2 rounded-sm px-[12px] py-[8px] border duration-300 transition-all backdrop-blur-xs"
-
 const ContactForm = () => {
     const [result, setResult] = useState("");
 
@@ -82,7 +80,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="w-[90%] md:w-1/2 xl:w-1/3 bg-[#0E161050] backdrop-blur-xs p-6 border border-white/15 rounded-xl">
+        <div className="w-[90%] md:w-1/2 xl:w-1/3 glass-card-dark p-6">
             <form onSubmit={onSubmit}>
                 <FieldGroup>
                     <FieldSet>
@@ -114,7 +112,7 @@ const ContactForm = () => {
                     <Field>
                         <button 
                             type="submit" 
-                            className={`${buttonClass} bg-white/90 text-black hover:bg-white cursor-pointer`}
+                            className="btn btn-primary cursor-pointer"
                         >
                             Submit
                         </button>

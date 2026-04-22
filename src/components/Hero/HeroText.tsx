@@ -2,8 +2,6 @@ import { Link } from 'react-router';
 import TextType from '../TextType/TextType'
 import { HashLink } from 'react-router-hash-link';
 
-const buttonClass = "font-mono p-2 rounded-sm px-[12px] py-[8px] border duration-300 transition-all backdrop-blur-xs"
-
 const HeroText = () => {
     return (
         <div className="z-10 flex flex-col gap-12 mx-6 md:mx-0 md:w-3/4 xl:w-1/2">
@@ -29,10 +27,10 @@ const HeroText = () => {
                 </p>
             </div>
             <div className='flex gap-4'>
-                <Link to="https://drive.google.com/file/d/1JjoT2Pc-dFPPemc2l_pdK01Q2NcD1p80/view?usp=sharing" className={`${buttonClass} bg-white/90 text-black hover:bg-white`}>
+                <Link to="https://drive.google.com/file/d/1JjoT2Pc-dFPPemc2l_pdK01Q2NcD1p80/view?usp=sharing" className="btn btn-primary">
                     Resume
                 </Link>
-                <HashLink smooth to="/#About" className={`${buttonClass} bg-white/10 border-white/25 hover:bg-white/20`}>
+                <HashLink smooth to="/#About" className="btn btn-secondary">
                     Learn more
                 </HashLink>
             </div>

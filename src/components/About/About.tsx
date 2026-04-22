@@ -2,8 +2,6 @@ import ProfileCard from "../ProfileCard/ProfileCard"
 import me from "../../assets/me.jpeg"
 import { Link } from "react-router"
 
-const buttonClass = "font-mono p-2 rounded-sm px-[12px] py-[8px] border duration-300 transition-all backdrop-blur-xs"
-
 const About = () => {
     return (
         <div className="flex flex-col gap-6 items-center md:w-1/2">
@@ -21,7 +19,7 @@ const About = () => {
             />
             <Link 
                 to="https://www.linkedin.com/in/niharika-sunwar-65537b2a2/"
-                className={`${buttonClass} bg-white/10 border-white/25 hover:bg-white/20 w-fit`}
+                className="btn btn-secondary w-fit"
             >
                 View on LinkedIn
             </Link>

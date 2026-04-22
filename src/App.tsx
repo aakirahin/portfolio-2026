@@ -49,7 +49,7 @@ function App() {
           variableSpeedMax={120}
           cursorBlinkDuration={0.5}
           loop={false}
-          className="xl:w-[40%] md:w-3/4 mx-6 lg:mx-0 text-center text-[16px] font-mono bg-white/10 p-4 rounded-xl backdrop-blur-xs border border-white/15"
+          className="xl:w-[40%] md:w-3/4 mx-6 lg:mx-0 text-center text-[16px] font-mono glass-card p-4"
         />
         <div className="xl:w-1/2 md:w-3/4 flex md:flex-row flex-col md:justify-between gap-16 items-center">
           <About/>

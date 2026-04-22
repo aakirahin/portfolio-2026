@@ -15,8 +15,6 @@ type Props = {
     }
 }
 
-const buttonClass = "font-mono p-2 rounded-sm px-[12px] py-[8px] border duration-300 transition-all"
-
 const CardContents = ({
     project
 }: Props) => {
@@ -51,13 +49,13 @@ const CardContents = ({
             <div className='flex gap-4'>
                 <Link
                     to={website}
-                    className={`${buttonClass} text-black bg-white/90 hover:bg-white`}
+                    className="btn btn-primary"
                 >
                     Website
                 </Link>
                 <Link 
                     to={github}
-                    className={`${buttonClass} bg-white/5 border-white/25 hover:bg-white/15`}
+                    className="btn btn-ghost"
                 >
                     GitHub
                 </Link>

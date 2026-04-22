@@ -89,6 +89,9 @@
 
 :root {
 
+    --brand: #00ff35;
+    --brand-dim: #00dd2c;
+
     --background: #001003;
 
     --foreground: white;
@@ -227,7 +230,7 @@
     @apply bg-background text-foreground;
     /* Firefox */
     scrollbar-width: thin;
-    scrollbar-color: #00ff3560 transparent;
+    scrollbar-color: color-mix(in srgb, var(--brand) 38%, transparent) transparent;
     }
   html {
     @apply font-sans;
@@ -241,8 +244,41 @@
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #21c742;
+    background-color: var(--brand);
     border-radius: 999px;
+  }
+}
+
+@layer components {
+  /* Button base */
+  .btn {
+    @apply font-mono px-3 py-2 rounded-sm border transition-all duration-300 backdrop-blur-xs;
+  }
+  .btn-primary {
+    @apply bg-white/90 text-black hover:bg-white;
+  }
+  .btn-secondary {
+    @apply bg-white/10 border-white/25 hover:bg-white/20;
+  }
+  .btn-ghost {
+    @apply bg-white/5 border-white/25 hover:bg-white/15;
+  }
+
+  /* Glass panel variants */
+  .glass-card {
+    @apply bg-white/10 rounded-xl backdrop-blur-xs border border-white/15;
+  }
+  .glass-card-dark {
+    @apply rounded-xl backdrop-blur-xs border border-white/15;
+    background-color: rgba(14, 22, 16, 0.31);
+  }
+
+  /* Brand badge */
+  .glowing-badge {
+    @apply flex gap-2 items-center uppercase text-sm px-3 py-2 rounded-full backdrop-blur-xs;
+    background-color: color-mix(in srgb, var(--brand) 15%, transparent);
+    border: 1px solid color-mix(in srgb, var(--brand) 31%, transparent);
+    color: var(--brand-dim);
   }
 }
 
