@@ -16,7 +16,7 @@ const About = () => {
                 enableMobileTilt
                 behindGlowColor="rgba(125, 190, 255, 0.5)"
                 behindGlowEnabled
-                innerGradient="linear-gradient(145deg,#00ff3550 0%,#71C4FF44 100%)"
+                innerGradient="linear-gradient(145deg,#37aa4f 0%,#71C4FF 100%)"
                 className="justify-self-center"
             />
             <Link 

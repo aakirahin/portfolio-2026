@@ -4,8 +4,8 @@ const DotFieldBackground = () => {
     return (
         <div className="absolute inset-0 -z-1">
             <DotField
-                dotRadius={2}
-                dotSpacing={10}
+                dotRadius={2.5}
+                dotSpacing={15}
                 cursorRadius={500}
                 cursorForce={0.10}
                 bulgeOnly={true}

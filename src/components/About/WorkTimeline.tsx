@@ -19,17 +19,12 @@ const experience = [
         company: "Northcoders",
         period: "October 2021 - February 2022",
     },
-    {
-        title: "Class Assistant",
-        company: "Kumon",
-        period: "March 2019 - May 2019",
-    },
 ]
 
 const WorkTimeline = () => {
     return (
-        <div className="relative w-1/2">
-            <div className="absolute bottom-0 left-0 top-0 w-px bg-white/25" />
+        <div className="relative w-1/2 pl-18">
+            <div className="absolute bottom-0 left-18 top-0 w-px bg-white/25" />
             <ul className="space-y-8 text-left">
                 {
                     experience.map((item) => (

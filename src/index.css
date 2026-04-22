@@ -201,7 +201,7 @@ code {
 
 :root {
 
-    --background: black;
+    --background: #001003;
 
     --foreground: white;
 
@@ -233,7 +233,7 @@ code {
 
     --border: oklch(0.922 0 0);
 
-    --input: oklch(0.922 0 0);
+    --input: #FFFFFF25;
 
     --ring: oklch(0.708 0 0);
 

@@ -158,7 +158,6 @@
     0 var(--background-y),
     var(--background-x) var(--background-y),
     center;
-  background-blend-mode: color, hard-light;
   background-size:
     500% 500%,
     300% 300%,
