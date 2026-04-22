@@ -10,7 +10,7 @@ import ContactForm from "./components/ContactForm.tsx"
 import TextType from "./components/TextType/TextType.tsx"
 import Links from "./components/Links/Links.tsx"
 
-const sectionClass = "relative min-h-screen flex items-center justify-center md:pt-[108px]"
+const sectionClass = "relative min-h-screen flex items-center justify-center pt-[108px] md:pt-0"
 const aboutText = `My love for design and coding began when I opened a Tumblr account at 14. I would spend my days learning HTML and customising my blog. That passion has persisted into my adulthood where I now develop websites and applications.`
 
 function App() {
