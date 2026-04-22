@@ -25,11 +25,11 @@ const HeroText = () => {
                 />
                 <p>
                     I'm a full-stack engineer with ~4 years of experience building scalable SaaS applications, with a deep fundamental understanding of React and JavaScript.
-                    {/* I focus on performance and maintainability, with particular strength in frontend and UI/UX. */}
+                    I focus on performance and maintainability, with particular strength in frontend and UI/UX.
                 </p>
             </div>
             <div className='flex gap-4'>
-                <Link to="/#About" className={`${buttonClass} bg-white/90 text-black hover:bg-white`}>
+                <Link to="https://drive.google.com/file/d/1JjoT2Pc-dFPPemc2l_pdK01Q2NcD1p80/view?usp=sharing" className={`${buttonClass} bg-white/90 text-black hover:bg-white`}>
                     Resume
                 </Link>
                 <HashLink smooth to="/#About" className={`${buttonClass} bg-white/10 border-white/25 hover:bg-white/20`}>
