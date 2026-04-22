@@ -29,7 +29,7 @@ const HeroText = () => {
                 <Link to="https://drive.google.com/file/d/1IAaroixLYiCP0n1pxiZwDn7sVhG82QK1/view?usp=sharing" className="btn btn-primary">
                     Resume
                 </Link>
-                <a href="/#About" className="btn btn-secondary">
+                <a href="/portfolio-2026/#About" className="btn btn-secondary">
                     Learn more
                 </a>
             </div>
