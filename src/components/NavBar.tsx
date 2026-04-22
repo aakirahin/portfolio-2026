@@ -10,19 +10,19 @@ type NavItem = {
 const navItems: NavItem[] = [
     {
         label: "Home",
-        href: "/#Home",
+        href: "/portfolio-2026/#Home",
     },
     {
         label: "Projects",
-        href: "/#Projects",
+        href: "/portfolio-2026/#Projects",
     },
     {
         label: "About",
-        href: "/#About",
+        href: "/portfolio-2026/#About",
     },
     {
         label: "Contact",
-        href: "/#Contact",
+        href: "/portfolio-2026/#Contact",
     },
 ]
 
