@@ -13,7 +13,7 @@ type InputProps = {
     label: string
     id: string
     placeholder: string
-    type: "text" | "email"
+    type: string
 }
 
 const InputField = ({

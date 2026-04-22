@@ -11,7 +11,7 @@ type Props = {
         description: string
         website: string
         github: string
-        thumbnail: string | null
+        thumbnail: string
     }
 }
 

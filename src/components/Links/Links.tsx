@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import AnimatedLink from './AnimatedLink'
 
-const links = {
+const links: Record<string, string> = {
   resume: "https://drive.google.com/file/d/1JjoT2Pc-dFPPemc2l_pdK01Q2NcD1p80/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/niharika-sunwar-65537b2a2/",
   github: "https://github.com/aakirahin",
