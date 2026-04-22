@@ -337,10 +337,25 @@ code {
     }
   body {
     @apply bg-background text-foreground;
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #00ff3560 transparent;
     }
   html {
     @apply font-sans;
     }
+
+  /* Chrome, Safari, Edge */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #21c742;
+    border-radius: 999px;
+  }
 }
 
 .hero-section-border {
@@ -360,9 +375,43 @@ code {
   background-image:
     linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent)),
     linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent));
-  background-size: 1px 100%, 1px 100%;
+    background-size: 1px 100%, 1px 100%;
   background-position: 20% 0, 80% 0;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .hero-section-border {
+    background-image: none;
+  }
+
+  .section-border {
+    background-image: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero-section-border {
+    isolation: isolate;
+    background-image:
+      linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent)),
+      linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent)),
+      linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent)),
+      linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent));
+    background-size: 100% 1px, 1px 100%, 1px 100%, 100% 1px;
+    background-position: 0 5%, 5% 0, 95% 0, 0 90%;
+    background-repeat: no-repeat;
+  }
+
+  .section-border {
+    isolation: isolate;
+    background-image:
+      linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent)),
+      linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent));
+      background-size: 1px 100%, 1px 100%;
+    background-position: 5% 0, 95% 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .hero-colorbends-fade {

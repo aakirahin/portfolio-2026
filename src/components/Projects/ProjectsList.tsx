@@ -34,7 +34,7 @@ const projects = [
 
 const ProjectsList = () => {
   return (
-    <div className='w-2/3 flex flex-wrap gap-[32px] justify-center'>
+    <div className='lg:w-2/3 flex flex-wrap gap-[32px] justify-center'>
         {
             projects.map((project) => (
                 <ProjectCard 

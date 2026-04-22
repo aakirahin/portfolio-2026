@@ -14,7 +14,7 @@ const Links = () => {
         isHover: false
     })
     return (
-        <div className="w-[400px]">
+        <div className="md:w-1/2 xl:w-1/3 w-full md:px-0 px-8">
             <div className="flex justify-between w-full font-mono uppercase">
                 {
                     Object.keys(links).map((key) => (

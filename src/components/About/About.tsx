@@ -6,7 +6,7 @@ const buttonClass = "font-mono p-2 rounded-sm px-[12px] py-[8px] border duration
 
 const About = () => {
     return (
-        <div className="flex flex-col gap-6 items-center w-1/2">
+        <div className="flex flex-col gap-6 items-center md:w-1/2">
             <ProfileCard
                 name="Niharika"
                 title="Full-Stack Engineer"

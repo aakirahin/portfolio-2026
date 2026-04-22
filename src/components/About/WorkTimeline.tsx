@@ -23,8 +23,8 @@ const experience = [
 
 const WorkTimeline = () => {
     return (
-        <div className="relative w-1/2 pl-18">
-            <div className="absolute bottom-0 left-18 top-0 w-px bg-white/25" />
+        <div className="relative lg:w-1/2 lg:pl-18">
+            <div className="absolute bottom-0 lg:left-18 top-0 w-px bg-white/25" />
             <ul className="space-y-8 text-left">
                 {
                     experience.map((item) => (

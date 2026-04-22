@@ -82,7 +82,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="w-full max-w-md bg-[#0E161050] backdrop-blur-xs p-6 border border-white/15 rounded-xl">
+        <div className="w-[90%] md:w-1/2 xl:w-1/3 bg-[#0E161050] backdrop-blur-xs p-6 border border-white/15 rounded-xl">
             <form onSubmit={onSubmit}>
                 <FieldGroup>
                     <FieldSet>

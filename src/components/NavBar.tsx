@@ -33,14 +33,14 @@ const NavBar = () => {
     })
 
     return (
-        <div className="w-1/2 text-white rounded-lg justify-between flex font-mono items-center">
+        <div className="mx-6 md:mx-0 w-full md:w-3/4 xl:w-1/2 text-white justify-between flex font-mono items-center">
             <img
                 src={logo}
                 alt="Niharika Sunwar"
                 height={36}
                 width={36}
             />
-            <div className="flex gap-12">
+            <div className="flex md:gap-12 gap-4">
                 {
                     navItems.map((item) => (
                         <AnimatedLink 
