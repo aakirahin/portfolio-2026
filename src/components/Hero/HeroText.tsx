@@ -26,7 +26,7 @@ const HeroText = () => {
                 </p>
             </div>
             <div className='flex gap-4'>
-                <Link to="https://drive.google.com/file/d/1JjoT2Pc-dFPPemc2l_pdK01Q2NcD1p80/view?usp=sharing" className="btn btn-primary">
+                <Link to="https://drive.google.com/file/d/1IAaroixLYiCP0n1pxiZwDn7sVhG82QK1/view?usp=sharing" className="btn btn-primary">
                     Resume
                 </Link>
                 <a href="/#About" className="btn btn-secondary">
