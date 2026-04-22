@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import { dribbble, github, linkedin, resume } from '../../lib/links'
 import AnimatedLink from './AnimatedLink'
 
 const links: Record<string, string> = {
-  resume: "https://drive.google.com/file/d/1IAaroixLYiCP0n1pxiZwDn7sVhG82QK1/view?usp=sharing",
-  linkedin: "https://www.linkedin.com/in/niharika-sunwar-65537b2a2/",
-  github: "https://github.com/aakirahin",
-  dribbble: "https://dribbble.com/nihsunwar",
+  resume: resume,
+  linkedin: linkedin,
+  github: github,
+  dribbble: dribbble,
 }
 
 const Links = () => {

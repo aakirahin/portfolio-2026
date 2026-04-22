@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import TextType from '../TextType/TextType'
+import { baseUrl, resume } from '../../lib/links';
 
 const HeroText = () => {
     return (
@@ -26,10 +27,10 @@ const HeroText = () => {
                 </p>
             </div>
             <div className='flex gap-4'>
-                <Link to="https://drive.google.com/file/d/1IAaroixLYiCP0n1pxiZwDn7sVhG82QK1/view?usp=sharing" className="btn btn-primary">
+                <Link to={resume} className="btn btn-primary">
                     Resume
                 </Link>
-                <a href="/portfolio-2026/#About" className="btn btn-secondary">
+                <a href={`${baseUrl}/#About`} className="btn btn-secondary">
                     Learn more
                 </a>
             </div>

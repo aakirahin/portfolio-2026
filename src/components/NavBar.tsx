@@ -1,6 +1,7 @@
 import { useState } from "react"
 import logo from "../assets/logo.png"
 import AnimatedLink from "./Links/AnimatedLink";
+import { baseUrl } from "../lib/links";
 
 type NavItem = {
     label: string
@@ -10,19 +11,19 @@ type NavItem = {
 const navItems: NavItem[] = [
     {
         label: "Home",
-        href: "/portfolio-2026/#Home",
+        href: `${baseUrl}/#Home`,
     },
     {
         label: "Projects",
-        href: "/portfolio-2026/#Projects",
+        href: `${baseUrl}/#Projects`,
     },
     {
         label: "About",
-        href: "/portfolio-2026/#About",
+        href: `${baseUrl}/#About`,
     },
     {
         label: "Contact",
-        href: "/portfolio-2026/#Contact",
+        href: `${baseUrl}/#Contact`,
     },
 ]
 
