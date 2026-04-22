@@ -2,7 +2,7 @@
 
 A personal portfolio site built with React, TypeScript, Vite, and Tailwind CSS.
 
-Deployed site: https://github.com/aakirahin/portfolio-2026 
+Deployed site: https://aakirahin.github.io/portfolio-2026/
 
 ## Tech Stack
 
