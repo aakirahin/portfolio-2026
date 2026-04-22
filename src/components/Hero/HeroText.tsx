@@ -1,6 +1,5 @@
 import { Link } from 'react-router';
 import TextType from '../TextType/TextType'
-import { HashLink } from 'react-router-hash-link';
 
 const HeroText = () => {
     return (
@@ -30,9 +29,9 @@ const HeroText = () => {
                 <Link to="https://drive.google.com/file/d/1JjoT2Pc-dFPPemc2l_pdK01Q2NcD1p80/view?usp=sharing" className="btn btn-primary">
                     Resume
                 </Link>
-                <HashLink smooth to="/#About" className="btn btn-secondary">
+                <a href="/#About" className="btn btn-secondary">
                     Learn more
-                </HashLink>
+                </a>
             </div>
         </div>
     )

@@ -1,4 +1,3 @@
-import { HashLink } from 'react-router-hash-link';
 import DecryptedText from '../DecryptedText';
 
 type Hover = {
@@ -24,7 +23,7 @@ const AnimatedLink = ({
             onMouseLeave={() => setHover({ item: "", isHover: false })}
         >
             {hover.isHover && hover.item === label && "> "}
-            <HashLink smooth to={href} className="hover:border-b">
+            <a href={href} className="hover:border-b">
                 <DecryptedText
                     text={label}
                     speed={100}
@@ -33,7 +32,7 @@ const AnimatedLink = ({
                     revealDirection="start"
                     sequential
                 />
-            </HashLink>
+            </a>
         </span>
     )
 }
