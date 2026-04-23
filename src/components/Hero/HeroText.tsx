@@ -9,7 +9,7 @@ const HeroText = () => {
             <div className='space-y-8 md:space-y-4'>
                 <TextType 
                     text="Hi! I'm Niharika"
-                    typingSpeed={75}
+                    typingSpeed={50}
                     pauseDuration={1500}
                     showCursor
                     cursorCharacter="_"

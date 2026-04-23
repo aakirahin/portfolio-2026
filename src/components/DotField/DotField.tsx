@@ -116,9 +116,9 @@ const DotField = memo(({
     }
 
     function onMouseMove(e: MouseEvent) {
-      const s = sizeRef.current;
-      mouseRef.current.x = e.pageX - s.offsetX;
-      mouseRef.current.y = e.pageY - s.offsetY;
+      const rect = canvas!.getBoundingClientRect();
+      mouseRef.current.x = e.clientX - rect.left;
+      mouseRef.current.y = e.clientY - rect.top;
     }
 
     function updateMouseSpeed() {

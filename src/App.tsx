@@ -1,21 +1,29 @@
-import HeroBackground from "./components/Hero/HeroBackground"
 import HeroText from "./components/Hero/HeroText"
 import NavBar from "./components/NavBar"
-import ProjectsList from "./components/Projects/ProjectsList"
-import WorkTimeline from "./components/About/WorkTimeline.tsx"
-import About from "./components/About/About.tsx"
 import Section from "./components/Section.tsx"
-import DotFieldBackground from "./components/DotField/DotFieldBackground.tsx"
-import ContactForm from "./components/ContactForm.tsx"
-import TextType from "./components/TextType/TextType.tsx"
-import Links from "./components/Links/Links.tsx"
+import { lazy, Suspense } from "react"
+const HeroBackground = lazy(() => import('./components/Hero/HeroBackground'))
+const DotFieldBackground = lazy(() => import('./components/DotField/DotFieldBackground'))
+const ProjectsList = lazy(() => import('./components/Projects/ProjectsList'))
+const TextType = lazy(() => import('./components/TextType/TextType.tsx'))
+const About = lazy(() => import('./components/About/About.tsx'))
+const WorkTimeline = lazy(() => import('./components/About/WorkTimeline.tsx'))
+const ContactForm = lazy(() => import('./components/ContactForm'))
+const Links = lazy(() => import('./components/Links/Links.tsx'))
 
 const sectionClass = "relative min-h-screen flex items-center justify-center pt-[108px] md:pt-0"
-const aboutText = `My love for design and coding began when I opened a Tumblr account at 14. I would spend my days learning HTML and customising my blog. That passion has persisted into my adulthood where I now develop websites and applications.`
+const aboutText = `My love for design and coding began when I opened a Tumblr account at 14. I would spend my days learning HTML and CSS to customise my blog. That passion has persisted into my adulthood where I now develop websites and applications.`
 
 function App() {
   return (
     <div className="overflow-clip text-[14px]">
+      {/* GLOBAL DOT BACKGROUND */}
+      <div className="fixed inset-0 -z-10 pointer-events-none">
+        <Suspense fallback={null}>
+          <DotFieldBackground/>
+        </Suspense>
+      </div>
+
       {/* NAV BAR */}
       <div className="absolute top-4 left-0 z-20 flex justify-center w-full">
         <NavBar/>
@@ -29,13 +37,11 @@ function App() {
 
       {/* PROJECTS */}
       <Section label="Projects" className={`projects-section ${sectionClass}`}>
-        <DotFieldBackground/>
         <ProjectsList/>
       </Section>
 
       {/* ABOUT */}
       <Section label="About" className={sectionClass}>
-        <DotFieldBackground/>
         <TextType 
           text={aboutText}
           startOnVisible={true}
@@ -59,7 +65,6 @@ function App() {
 
       {/* CONTACT */}
       <Section label="Contact" className={`${sectionClass} pb-[108px]`}>
-        <DotFieldBackground/>
         <ContactForm/>
         <Links/>
       </Section>
