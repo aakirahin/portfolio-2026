@@ -323,7 +323,7 @@
       linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent)),
       linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent));
     background-size: 100% 1px, 1px 100%, 1px 100%, 100% 1px;
-    background-position: 0 5%, 5% 0, 95% 0, 0 90%;
+    background-position: 0 8%, 5% 0, 95% 0, 0 90%;
     background-repeat: no-repeat;
   }
 
