@@ -89,8 +89,8 @@
 
 :root {
 
-    --brand: #00ff35;
-    --brand-dim: #00dd2c;
+    --brand: rgb(67, 218, 97);
+    --brand-dim: rgb(67, 218, 97);
 
     --background: #001003;
 
@@ -275,7 +275,7 @@
 
   /* Brand badge */
   .glowing-badge {
-    @apply flex gap-2 items-center uppercase text-sm px-3 py-2 rounded-full backdrop-blur-xs;
+    @apply flex gap-2 items-center text-sm px-4 py-2 rounded-full backdrop-blur-xs;
     background-color: color-mix(in srgb, var(--brand) 15%, transparent);
     border: 1px solid color-mix(in srgb, var(--brand) 31%, transparent);
     color: var(--brand-dim);

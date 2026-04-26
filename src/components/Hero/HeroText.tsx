@@ -5,7 +5,7 @@ import { baseUrl, resume } from '../../lib/links';
 const HeroText = () => {
     return (
         <div className="z-10 flex flex-col gap-12 mx-6 md:mx-0 md:w-3/4 xl:w-1/2">
-            <span className='px-4 py-2 bg-white/10 w-fit rounded-full text-sm'>Portfolio 2026</span>
+        <span className='px-4 py-2 bg-white/10 w-fit rounded-full text-sm'>Portfolio 2026</span>
             <div className='space-y-8 md:space-y-4'>
                 <TextType 
                     text="Hi! I'm Niharika"
