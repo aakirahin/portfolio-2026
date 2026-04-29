@@ -290,7 +290,7 @@
     linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent)),
     linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent));
   background-size: 100% 1px, 1px 100%, 1px 100%, 100% 1px;
-  background-position: 0 8%, 20% 0, 80% 0, 0 90%;
+  background-position: 0 8%, 10% 0, 90% 0, 0 90%;
   background-repeat: no-repeat;
 }
 
@@ -300,7 +300,7 @@
     linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent)),
     linear-gradient(color-mix(in oklch, white 25%, transparent), color-mix(in oklch, white 25%, transparent));
     background-size: 1px 100%, 1px 100%;
-  background-position: 20% 0, 80% 0;
+  background-position: 10% 0, 90% 0;
   background-repeat: no-repeat;
 }
 

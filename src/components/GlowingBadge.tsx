@@ -11,7 +11,7 @@ const GlowingBadge = ({
 }: Props) => {
   return (
   <span className={`glowing-badge ${className}`}>
-    {/* <FaCircle size={6} className="animate-pulse"/> */}
+    <FaCircle size={6} className="animate-pulse"/>
     {label}
   </span>
   )
