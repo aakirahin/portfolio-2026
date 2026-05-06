@@ -23,7 +23,7 @@ const HeroText = () => {
                 />
                 <p>
                     I'm a full-stack engineer with ~4 years of experience building scalable SaaS applications, with a deep fundamental understanding of React and JavaScript.
-                    I focus on performance and maintainability, with particular strength in frontend and UI/UX.
+                    I focus on performance and maintainability.
                 </p>
             </div>
             <div className='flex gap-4'>

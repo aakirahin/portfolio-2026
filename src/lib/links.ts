@@ -1,5 +1,5 @@
 export const baseUrl = "/portfolio-2026"
-export const resume = "https://drive.google.com/file/d/1oINoA7NIw63LcJAgaIlShrFY-BECx1WU/view?usp=sharing"
+export const resume = "https://drive.google.com/file/d/1Olue7lzssGhVWheGY96GjePrFxnZmqXO/view?usp=sharing"
 export const linkedin= "https://www.linkedin.com/in/niharika-sunwar-65537b2a2/"
 export const github = "https://github.com/aakirahin"
 export const dribbble = "https://dribbble.com/nihsunwar"
