@@ -1,5 +1,6 @@
 import ProjectCard from './ProjectCard'
 import { FaLock } from 'react-icons/fa'
+import jobhuntKanbanThumbnail from "../../assets/jobhunt-kanban-thumnbnail.png"
 import ecomDashboardThumbnail from "../../assets/ecom-dashboard-thumbnail.png"
 import carlyAiThumbnail from "../../assets/carly-ai-thumbnail.png"
 import { Link } from 'react-router'
@@ -9,6 +10,16 @@ import SpotlightCard from '../SpotlightCard/SpotlightCard'
 const projects = [
     {
         id: 1,
+        name: "Jobhunt Kanban",
+        date: "May 2026",
+        tags: ["fullstack", "for fun"],
+        description: "Social job application tracker with a drag-and-drop Kanban board.",
+        website: "https://github.com/aakirahin/jobhunt-kanban",
+        github: "https://github.com/aakirahin/jobhunt-kanban",
+        thumbnail: jobhuntKanbanThumbnail,
+    },
+    {
+        id: 2,
         name: "E-commerce Dashboard",
         date: "March 2026",
         tags: ["fullstack", "performance"],
@@ -18,7 +29,7 @@ const projects = [
         thumbnail: ecomDashboardThumbnail,
     },
     {
-        id: 2,
+        id: 3,
         name: "Carly AI",
         date: "April 2026",
         tags: ["frontend", "ui/ux"],

@@ -27,7 +27,7 @@ const CardContents = ({
                 alt="thumbnail"
                 width="100%"
                 height="100%"
-                className='rounded-lg'
+                className='rounded-lg overflow-clip'
             />
             <div className='flex flex-col gap-3'>
                 <h3 className='text-lg font-mono'>{name}</h3>
